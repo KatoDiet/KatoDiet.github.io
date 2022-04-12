@@ -238,9 +238,8 @@ button:hover {
 							<div class="testbox">
 
 
-								<form name="myFood" id="myFood"
-									action="KatoDietController?action=SAVEFOOD"
-									onSubmit="return validateForm()" method="post">
+								<form name="myFood" id="myFood">
+								
 
 									<fieldset>
 										<legend>Food Intake Information</legend>
@@ -330,8 +329,7 @@ button:hover {
 				<div class="textbox">
 
 					<form style="background: #a16271;" name="myWeight"
-						action="KatoDietController?action=ADDWEIGHT"
-						onSubmit="return validateWeightForm()" method="POST">
+						>
 
 						<fieldset>
 							<legend>Weight and Height Detail</legend>
@@ -390,8 +388,7 @@ button:hover {
 				<h5>Please enter your exercise details here</h5>
 
 				<form style="background: #745c64;" name="fitnessform"
-					action="KatoDietController?action=ADDEXERCISE"
-					onsubmit="return validateFitnessForm()" method="POST">
+					>
 
 					<fieldset class="style-table">
 						<legend>Exercise Detail</legend>
@@ -476,7 +473,7 @@ button:hover {
 		id="display">
 		<div class="w3-content">
 			<div class="w3-twothird">
-				<form action="KatoDietController?action=DISPLAY" method="POST">
+				<form action="display.html" >
 					<label>Hello User</label> <input type="text" name="userid"
 						> <label>Would you like to
 						see your progress?</label> <input type="submit" value="YES">
