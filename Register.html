@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1" isELIgnored="false"%>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,63 +5,6 @@
 		<meta name="Viewport" content="width=device-width, initial-scale=1.00">
 		<title>KATO DIET</title>
 		<link rel="stylesheet" href="registerX.css">
-		<script type="text/javascript">
-			function validateForm(){
-				//is full name empty
-				var fullName = document.myRegister.fname.value;
-				if(fullName==null||fullName==""){
-					alert("Full name must be filled out");
-					return false;
-				}
-				
-				//is user id empty
-				var username = document.myRegister.user.value;
-				if(username == null|| username == ""){
-					alert("User id must be filled out");
-					return false;
-				}
-				
-				//is password empty
-				var pass = document.myRegister.pswd.value;
-				if(pass==null||pass==""){
-					alert("password must be filled out");
-					return false;
-				}
-				
-				//is confirm password matched with password
-				var password = document.myRegister.pswdR.value;
-				if(password != pass){
-					//is confirm password empty
-					if(password == null || password == ""){
-						alert("Confirm Password must be filled out");
-						return false;
-					}
-					alert("The password is not matched");
-					return false;
-				}
-				
-				//is date of birth empty
-				var dob = document.getElementById("DOB").value;
-					if(!dob){
-						alert("Date of birth must be setted");
-						return false;
-					}
-				
-				//is any gender not selected
-				var genderM = document.getElementById("male").checked;
-				var genderF = document.getElementById("female").checked;
-				if(genderM != true || genderF != true){
-					if(genderM == true){
-						return true;
-					}
-					if(genderF == true){
-						return true;
-					}
-					alert("Please select a gender");
-					return false;
-				}
-			}
-		</script>
 	</head>
 	<body style="background-color:#dfcecd;">
 		<form action="KatoDietController?action=ADDUSER" name="myRegister" onsubmit="return validateForm()" method="POST">
@@ -90,11 +31,8 @@
 				<label style="color:black;"for="female">Female</label>
 				<input class="loginboxInput" type="radio" id="female" name="gender" value="female" >
 				<input class="submitB" type="submit" id="submit" name="submit" value="REGISTER"><br>
-				<label class="label">already have an account? <b><a href="#" onclick="window.location.href='Login.jsp'">Sign In!</a></b></label></form>
+				<label class="label">already have an account? <b><a href="#" onclick="window.location.href='index.html'">Sign In!</a></b></label></form>
 			</div>
 		</form>
-		<script type="text/javascript" src="index.js">
-		
-		</script>
 	</body>
 </html>
