@@ -1,7 +1,4 @@
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
   <head>
@@ -154,82 +151,7 @@ button:hover {
 
 
 <body>
-<script language="javascript" type="text/javascript">
-	
 
-	function validateForm() {
-	
-		if (document.myFood.category.value.selectedIndex == 0){
-			alert("Please key-in food category");
-			return false;
-		}
-		if (document.myFood.subcategory.selectedIndex == 0) {
-			alert("Please key-in food description");
-			return false;
-		}
-		if (document.myFood.foodcalories.value == null
-				|| document.myFood.foodcalories.value == "") {
-			alert("Please key-in calories intake");
-			return false;
-		}
-	
-
-	}
-	//dropdown list for food
-	function dropdownlist(listindex) {
-		document.myFood.subcategory.options.length = 0;
-		switch (listindex) {
-		case "Carbohydrate":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Rice", "Rice");
-			document.myFood.subcategory.options[2] = new Option("Bread",
-					"Bread");
-			document.myFood.subcategory.options[3] = new Option("Pasta",
-					"Pasta");
-			document.myFood.subcategory.options[4] = new Option("Potatoes",
-					"Potatoes");
-			break;
-
-		case "Protein":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Fish", "Fish");
-			document.myFood.subcategory.options[2] = new Option("Meat", "Meat");
-			document.myFood.subcategory.options[3] = new Option("Egg", "Egg");
-			document.myFood.subcategory.options[4] = new Option("Yogurt",
-					"Yogurt");
-			break;
-
-		case "Fat":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Butter",
-					"Butter");
-			document.myFood.subcategory.options[2] = new Option("Ice Cream",
-					"Ice Cream");
-			document.myFood.subcategory.options[3] = new Option("Oil", "Oil");
-			break;
-
-		case "Fruit and Vegetable":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Apple",
-					"Apple");
-			document.myFood.subcategory.options[2] = new Option("Carrot",
-					"Carrot");
-			document.myFood.subcategory.options[3] = new Option("Grape",
-					"Grape");
-			document.myFood.subcategory.options[3] = new Option("Eggplant",
-					"Eggplant");
-			break;
-
-		}
-
-	}
-	
-	
-</script>
 
 	<!-- First Grid -->
 	<div class="w3-row-padding w3-padding-64 w3-container" id="nutrition">
@@ -253,8 +175,8 @@ button:hover {
 							<div class="testbox">
 
 
-								<form name="myFood" id="myFood" action="KatoDietController?action=UPDATEFOOD"
-									onSubmit="return validateForm()" method="post">
+								<form name="myFood" id="myFood" action="display.html"
+									>
 
 									<fieldset>
 										<legend>Food Intake Information</legend>
