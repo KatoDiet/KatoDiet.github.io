@@ -200,7 +200,7 @@ button {
 		id="display">
 		<div class="w3-content">
 			<div class="w3-twothird">
-				<form action="KatoDietInterface.html" method="POST">
+				<form action="KatoDietInterface.html">
 					<label>Hello User</label> <input type="text" id="userid"
 						name="userid" value="${user.userID}" readonly> 
 						<label>Would you like to input more data?</label> <input type="submit" value="YES">
@@ -219,7 +219,7 @@ button {
 					<c:forEach items="${food}" var="food">
 
 						<tr> 
-						<form action="FoodUpdate.html" method="POST">
+						<form action="FoodUpdate.html" >
 						<td><input class="inputdata" type="text" id="userid"
 						name="userid" value="${user.userID}" readonly></td>
 						<td><input class="inputdata" type="text" id="bdate"
@@ -253,7 +253,7 @@ button {
 					<c:forEach items="${exercise}" var="exercise">
 
 						<tr> 
-						<form action="ExerciseUpdate.html" method="POST">
+						<form action="ExerciseUpdate.html">
 							<td><input class="inputdata" type="text" id="userid"
 						name="userid" value="${user.userID}" readonly></td>
 							<td><input class="inputdata" type="text" id="bdate"
@@ -284,7 +284,7 @@ button {
 					<c:forEach items="${weight}" var="weight">
 
 						<tr> 
-						<form action="WeightUpdate.html" method="POST">
+						<form action="WeightUpdate.html" >
 							<td><input class="inputdata" type="text" id="userid"
 						name="userid" value="${user.userID}" readonly></td>
 							<td><input class="inputdata" type="text" id="bdate"
