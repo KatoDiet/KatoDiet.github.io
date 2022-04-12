@@ -253,7 +253,7 @@ button {
 					<c:forEach items="${exercise}" var="exercise">
 
 						<tr> 
-						<form action="ExerciseUpdate.hmtl" method="POST">
+						<form action="ExerciseUpdate.html" method="POST">
 							<td><input class="inputdata" type="text" id="userid"
 						name="userid" value="${user.userID}" readonly></td>
 							<td><input class="inputdata" type="text" id="bdate"
@@ -262,7 +262,7 @@ button {
 							<td><input class="inputdata" type="text" id="exerciseType" name="exerciseType" value="${exercise.exercise_type}" readonly></td>
 							<td><input class="inputdata" type="text" id="exduration" name="exduration" value="${exercise.duration}" readonly></td>
 							<td><input class="inputdata" type="text" id="caloriesburn" name="caloriesburn" value="${exercise.caloriesBurn}" readonly></td>
-                            <td><button class="btn" name="action" value="GETUPDATEEXERCISE"><i class="fa fa-edit" ></i></button> </td>
+                            <td><button class="btn" type="submit" ><i class="fa fa-edit" ></i></button> </td>
                             
                             <td><button class="btn" name="action" value="DELETEEXERCISE"  onclick="return confirm('Are you sure you want to delete this item');"><i class="fa fa-trash" ></i></button> </td></form>
                          </tr>
@@ -292,7 +292,7 @@ button {
 							<td><input class="inputdata" type="text" id="weight" name="weight" value="${weight.weight}" readonly></td>
 							<td><input class="inputdata" type="text" id="bmi" name="bmi" value="${weight.bmi}" readonly></td>
 							<td><input class="inputdata" type="text" id="status" name="status" value="${weight.status}" readonly></td>
-                            <td><button class="btn" name="action" value="GETUPDATEWEIGHT"><i class="fa fa-edit"></i></button> </td>
+                            <td><button class="btn" type="submit" ><i class="fa fa-edit"></i></button> </td>
                             
                             <td><button class="btn" name="action" value="DELETEWEIGHT" onclick="return confirm('Are you sure you want to delete this item');"><i class="fa fa-trash"></i></button> </td></tr>
                             </form>
