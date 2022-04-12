@@ -1,7 +1,4 @@
 
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
-
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <head>
@@ -147,125 +144,6 @@ button:hover {
 	background: #8B1558;
 }
 </style>
-<script language="javascript" type="text/javascript">
-	function validateFitnessForm() {
-
-		if (document.fitnessform.date.value == null
-				|| document.fitnessform.date.value == "") {
-			alert("Please key-in date");
-			return false;
-		}
-		if (document.fitnessform.time.value == null
-				|| document.fitnessform.time.value == "") {
-			alert("Please key-in time");
-			return false;
-		}
-		if (document.fitnessform.sport.selectedIndex == 0) {
-			alert("Please select your sport.");
-			return false;
-		}
-		if (document.fitnessform.duration.selectedIndex == 0) {
-			alert("Please select your duration.");
-			return false;
-		}
-
-	}
-
-	function validateForm() {
-		if (document.myFood.bdate.value == null
-				|| document.myFood.bdate.value == "") {
-			alert("Please key-in date");
-			return false;
-		}
-		if (document.myFood.ftime.value == null
-				|| document.myFood.ftime.value == "") {
-			alert("Please key-in time ");
-			return false;
-		}
-		if (document.myFood.category.value == null
-				|| document.myFood.category.value == "") {
-			alert("Please key-in food category");
-			return false;
-		}
-		if (document.myFood.subcategory.value == null
-				|| document.myFood.subcategory.value == "") {
-			alert("Please key-in food description");
-			return false;
-		}
-		if (document.myFood.calories.value == null
-				|| document.myFood.calories.value == "") {
-			alert("Please key-in calories intake");
-			return false;
-		}
-		
-
-	}
-
-	function validateWeightForm() {
-		if (document.myWeight.weight.value == null
-				|| document.myWeight.weight.value == "") {
-			alert("Please enter weight");
-			return false;
-		}
-		if (document.myWeight.height.value == null
-				|| document.myWeight.height.value == "") {
-			alert("Please enter height");
-			return false;
-		}
-	}
-	//dropdown list for food
-	function dropdownlist(listindex) {
-		document.myFood.subcategory.options.length = 0;
-		switch (listindex) {
-		case "Carbohydrate":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Rice", "Rice");
-			document.myFood.subcategory.options[2] = new Option("Bread",
-					"Bread");
-			document.myFood.subcategory.options[3] = new Option("Pasta",
-					"Pasta");
-			document.myFood.subcategory.options[4] = new Option("Potatoes",
-					"Potatoes");
-			break;
-
-		case "Protein":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Fish", "Fish");
-			document.myFood.subcategory.options[2] = new Option("Meat", "Meat");
-			document.myFood.subcategory.options[3] = new Option("Egg", "Egg");
-			document.myFood.subcategory.options[4] = new Option("Yogurt",
-					"Yogurt");
-			break;
-
-		case "Fat":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Butter",
-					"Butter");
-			document.myFood.subcategory.options[2] = new Option("Ice Cream",
-					"Ice Cream");
-			document.myFood.subcategory.options[3] = new Option("Oil", "Oil");
-			break;
-
-		case "Fruit and Vegetable":
-			document.myFood.subcategory.options[0] = new Option("Select Food",
-					"");
-			document.myFood.subcategory.options[1] = new Option("Apple",
-					"Apple");
-			document.myFood.subcategory.options[2] = new Option("Carrot",
-					"Carrot");
-			document.myFood.subcategory.options[3] = new Option("Grape",
-					"Grape");
-			document.myFood.subcategory.options[3] = new Option("Eggplant",
-					"Eggplant");
-			break;
-
-		}
-
-	}
-</script>
 
 
 </head>
@@ -366,10 +244,9 @@ button:hover {
 
 									<fieldset>
 										<legend>Food Intake Information</legend>
-										<p style="color: #b50e0e">${NUTRITION_NOTIFICATION}</p>
 										<div class="item">
 											<label for="userid">User ID<span>*</span></label> <input
-												id="userid" type="text" name="userid" value="${user.userID}"
+												id="userid" type="text" name="userid" 
 												readonly />
 										</div>
 										<div class="item">
@@ -449,7 +326,6 @@ button:hover {
 
 				<h1>Lets manage my BMI !</h1>
 				<h5>Please input weight and height details here</h5>
-				<p style="color: #b50e0e">${WEIGHT_NOTIFICATION}</p>
 
 				<div class="textbox">
 
@@ -462,7 +338,7 @@ button:hover {
 
 							<div class="item">
 								<label for="userid"> User ID :<span>*</span></label> <input
-									type="text" name="userid" value="${user.userID}">
+									type="text" name="userid" >
 							</div>
 
 							<div class="item">
@@ -512,8 +388,6 @@ button:hover {
 			<div class="w3-twothird">
 				<h1>Yes, I've exercise today!</h1>
 				<h5>Please enter your exercise details here</h5>
-				<p style="color: #b50e0e">${EXERCISE_NOTIFICATION}</p>
-
 
 				<form style="background: #745c64;" name="fitnessform"
 					action="KatoDietController?action=ADDEXERCISE"
@@ -524,7 +398,7 @@ button:hover {
 
 						<div class="item">
 							<label for="userid">User name:<span>*</span></label> <input
-								type="text" id="userid" name="userid" value="${user.userID}"
+								type="text" id="userid" name="userid"
 								readonly>
 						</div>
 
@@ -604,7 +478,7 @@ button:hover {
 			<div class="w3-twothird">
 				<form action="KatoDietController?action=DISPLAY" method="POST">
 					<label>Hello User</label> <input type="text" name="userid"
-						value="${user.userID}"> <label>Would you like to
+						> <label>Would you like to
 						see your progress?</label> <input type="submit" value="YES">
 				</form>
 			</div>
