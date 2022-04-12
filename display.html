@@ -170,70 +170,6 @@ button {
 </style>
 </head>
 <title>User Registration</title>
-<script type="text/javascript">
-	function validateFitnessForm() {
-
-		if (document.fitnessform.date.value == null
-				|| document.fitnessform.date.value == "") {
-			alert("Please key-in date");
-			return false;
-		}
-		if (document.fitnessform.time.value == null
-				|| document.fitnessform.time.value == "") {
-			alert("Please key-in time");
-			return false;
-		}
-		if (document.fitnessform.sport.selectedIndex == 0) {
-			alert("Please select your sport.");
-			return false;
-		}
-		if (document.fitnessform.duration.selectedIndex == 0) {
-			alert("Please select your duration.");
-			return false;
-		}
-
-	}
-
-	function validateForm() {
-		if (document.myFood.bdate.value == null
-				|| document.myFood.bdate.value == "") {
-			alert("Please key-in date");
-			return false;
-		}
-		if (document.myFood.foodcat.value == null
-				|| document.myFood.foodcat.value == "") {
-			alert("Please key-in food category");
-			return false;
-		}
-		if (document.myFood.desc.value == null
-				|| document.myFood.desc.value == "") {
-			alert("Please key-in food description");
-			return false;
-		}
-		if (document.myFood.calories.value == null
-				|| document.myFood.calories.value == "") {
-			alert("Please key-in calories intake");
-			return false;
-		}
-	
-
-	}
-	
-	function validateWeightForm() {
-		if (document.myWeight.weight.value == null
-				|| document.myWeight.weight.value == "") {
-			alert("Please enter weight");
-			return false;
-		}
-		if (document.myWeight.height.value == null
-				|| document.myWeight.height.value == "") {
-			alert("Please enter height");
-			return false;
-		}
-	
-
-	
-</script>
 
 
 <body>
@@ -248,7 +184,7 @@ button {
 			<div></div>
 			<!-- Right-sided navbar links -->
 			<div class="w3-right w3-hide-small">
-				<a href="Login.jsp" class="w3-bar-item w3-button">LOGOUT</a>
+				<a href="index.html" class="w3-bar-item w3-button">LOGOUT</a>
 			</div>
 
 			<!-- Hide right-floated links on small screens and replace them with a menu icon -->
@@ -264,7 +200,7 @@ button {
 		id="display">
 		<div class="w3-content">
 			<div class="w3-twothird">
-				<form action="KatoDietController?action=BACK" method="POST">
+				<form action="KatoDietInterface.html" method="POST">
 					<label>Hello User</label> <input type="text" id="userid"
 						name="userid" value="${user.userID}" readonly> 
 						<label>Would you like to input more data?</label> <input type="submit" value="YES">
