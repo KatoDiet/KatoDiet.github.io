@@ -1,5 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1" isELIgnored="false"%>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -148,22 +147,7 @@ button:hover {
 	background: #8B1558;
 }
 </style>
-<script language="javascript" type="text/javascript"> 
 
-
-function validateWeightForm() {
-	if (document.myWeight.weight.value == null
-			|| document.myWeight.weight.value == "") {
-		alert("Please enter weight");
-		return false;
-	}
-	if (document.myWeight.height.value == null
-			|| document.myWeight.height.value == "") {
-		alert("Please enter height");
-		return false;
-	}
-}
-</script>
 </head>
 <body>
 	<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container"
@@ -173,13 +157,12 @@ function validateWeightForm() {
 
 				<h1>Lets manage my BMI !</h1>
 				<h5>Please input weight and height details here</h5>
-				<p style="color: #b50e0e">${WEIGHT_NOTIFICATION}</p>
+				
 
 				<div class="textbox">
 
 					<form style="background: #a16271;" name="myWeight"
-						action="KatoDietController?action=UPDATEWEIGHT"
-						onSubmit="return validateWeightForm()" method="POST">
+						action="display.html">
 
 						<fieldset>
 							<legend>Weight and Height Detail</legend>
