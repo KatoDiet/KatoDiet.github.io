@@ -202,7 +202,7 @@ button {
 			<div class="w3-twothird">
 				<form action="KatoDietInterface.html">
 					<label>Hello User</label> <input type="text" id="userid"
-						name="userid" value="${user.userID}" readonly> 
+						name="userid" value="yourname" readonly> 
 						<label>Would you like to input more data?</label> <input type="submit" value="YES">
 				</form>
 				<table class="table table-striped table-bordered">
@@ -221,13 +221,13 @@ button {
 						<tr> 
 						<form action="FoodUpdate.html" >
 						<td><input class="inputdata" type="text" id="userid"
-						name="userid" value="${user.userID}" readonly></td>
+						name="userid" value="yourname" readonly></td>
 						<td><input class="inputdata" type="text" id="bdate"
-						name="bdate" value="${food.bdate}" readonly></td>
+						name="bdate" value="12/4/2022" readonly></td>
 						<td><input class="inputdata" type="text" id="ftime"
-						name="ftime" value="${food.time}" readonly></td>
+						name="ftime" value="3:45pm" readonly></td>
 						<td><input class="inputdata" type="text" id="calories"
-						name="foodcalories" value="${food.calories}" ></td> 
+						name="foodcalories" value="500" ></td> 
                         <td><button class="btn" type="submit" ><i class="fa fa-edit"></i></button></td>
                         
                       
@@ -255,13 +255,13 @@ button {
 						<tr> 
 						<form action="ExerciseUpdate.html">
 							<td><input class="inputdata" type="text" id="userid"
-						name="userid" value="${user.userID}" readonly></td>
+						name="userid" value="yourname" readonly></td>
 							<td><input class="inputdata" type="text" id="bdate"
-						name="bdate" value="${exercise.date}" readonly></td>
-							<td><input class="inputdata" type="text" id="time" name="time" value="${exercise.time}" readonly></td>
-							<td><input class="inputdata" type="text" id="exerciseType" name="exerciseType" value="${exercise.exercise_type}" readonly></td>
-							<td><input class="inputdata" type="text" id="exduration" name="exduration" value="${exercise.duration}" readonly></td>
-							<td><input class="inputdata" type="text" id="caloriesburn" name="caloriesburn" value="${exercise.caloriesBurn}" readonly></td>
+						name="bdate" value="23/3/2022" readonly></td>
+							<td><input class="inputdata" type="text" id="time" name="time" value="2:40am" readonly></td>
+							<td><input class="inputdata" type="text" id="exerciseType" name="exerciseType" value="running" readonly></td>
+							<td><input class="inputdata" type="text" id="exduration" name="exduration" value="30 minutes" readonly></td>
+							<td><input class="inputdata" type="text" id="caloriesburn" name="caloriesburn" value="458" readonly></td>
                             <td><button class="btn" type="submit" ><i class="fa fa-edit" ></i></button> </td>
                             
                             <td><button class="btn" name="action" value="DELETEEXERCISE"  onclick="return confirm('Are you sure you want to delete this item');"><i class="fa fa-trash" ></i></button> </td></form>
@@ -286,12 +286,12 @@ button {
 						<tr> 
 						<form action="WeightUpdate.html" >
 							<td><input class="inputdata" type="text" id="userid"
-						name="userid" value="${user.userID}" readonly></td>
+						name="userid" value="yourname" readonly></td>
 							<td><input class="inputdata" type="text" id="bdate"
-						name="bdate" value="${weight.dateday}" readonly></td>
-							<td><input class="inputdata" type="text" id="weight" name="weight" value="${weight.weight}" readonly></td>
-							<td><input class="inputdata" type="text" id="bmi" name="bmi" value="${weight.bmi}" readonly></td>
-							<td><input class="inputdata" type="text" id="status" name="status" value="${weight.status}" readonly></td>
+						name="bdate" value="12/2/2022" readonly></td>
+							<td><input class="inputdata" type="text" id="weight" name="weight" value="52" readonly></td>
+							<td><input class="inputdata" type="text" id="bmi" name="bmi" value="20.12" readonly></td>
+							<td><input class="inputdata" type="text" id="status" name="status" value="normal" readonly></td>
                             <td><button class="btn" type="submit" ><i class="fa fa-edit"></i></button> </td>
                             
                             <td><button class="btn" name="action" value="DELETEWEIGHT" onclick="return confirm('Are you sure you want to delete this item');"><i class="fa fa-trash"></i></button> </td></tr>
