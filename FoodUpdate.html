@@ -183,17 +183,17 @@ button:hover {
 										
 										<div class="item">
 											<label for="userid">User ID<span>*</span></label> <input
-												id="userid" type="text" name="userid" value="${user.userID}"
+												id="userid" type="text" name="userid" value="yourname"
 												readonly />
 										</div>
 										<div class="item">
 											<label for="bdate">Date <span>*</span></label> <input
-												id="bdate" type="date" name="bdate"  value="${food.bdate}" min="2022-01-01"
+												id="bdate" type="date" name="bdate"  value="12/4/2022" min="2022-01-01"
 												max="2030-12-31" /> <i class="fas fa-calendar-alt"></i>
 										</div>
 																<div class="item">
 									<label for="time">Time <span>*</span></label> 
-									<input type="time" id="time" name="ftime" value="${food.time}" readonly><i class="fas fa-calendar-alt"></i>
+									<input type="time" id="time" name="ftime" value="3:45pm" readonly><i class="fas fa-calendar-alt"></i>
 									</div>
 
 										<div class="item">
@@ -202,7 +202,7 @@ button:hover {
 											</p>
 											<select name="category" id="category"
 												onchange="javascript: dropdownlist(this.options[this.selectedIndex].value);">
-												<option  value="${food.foodcat}">Choose food category</option>
+												<option  value="protien">Choose food category</option>
 												<option value="Carbohydrate">Carbohydrate</option>
 												<option value="Protein">Protein</option>
 												<option value="Fat">Fat</option>
@@ -219,7 +219,7 @@ button:hover {
 											<noscript>
 												
 												<select name="subcategory" id="subcategory" >
-													<option  value="${food.desc}">choose food subcategory</option>
+													<option  value="fish">choose food subcategory</option>
 												</select>
 											</noscript>
 											
@@ -228,7 +228,7 @@ button:hover {
 										<div class="item">
 											<label for="calories"> Calories Intake<span>*</span></label>
 											<input id="calories" type="text" name="foodcalories"
-												  value="${food.calories}"/>
+												  value="500"/>
 										</div>
 										<div class="btn-block">
 											<button type="submit"
