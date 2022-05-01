@@ -169,25 +169,25 @@ button:hover {
 
 						<div class="item">
 							<label for="userid">User name:<span>*</span></label> <input
-								type="text" id="userid" name="userid" value="${user.userID}"
+								type="text" id="userid" name="userid" value="yourname"
 								readonly>
 						</div>
 
 						<div class="item">
 							<label for="start">Date :<span>*</span></label> <input
 								type="date" id="start" name="date" min="2022-01-01"
-								max="2030-12-31" value="${exercise.date}" readonly>
+								max="2030-12-31" value="23/3/2022" readonly>
 						</div>
 
 						<div class="item">
 							<label for="time">Select a time :<span>*</span></label> 
-							<input type="time" id="time" name="time" value="${exercise.time}" readonly><i class="fas fa-calendar-alt"></i>
+							<input type="time" id="time" name="time" value="2:40am" readonly><i class="fas fa-calendar-alt"></i>
 						</div>
 
 						<div class="item">
 							<label for="sport">Select a sport :<span>*</span></label> <select
 								name="exerciseType" style="width: 45%;">
-								<option selected value="${exercise.exercise_type}" disabled selected>Choose exercise type</option>
+								<option selected value="running" disabled selected>Choose exercise type</option>
 								<option value="Bicycling">Bicycling</option>
 								<option value="Hiking">Hiking</option>
 								<option value="Running">Running</option>
@@ -199,7 +199,7 @@ button:hover {
 						<div class="item">
 							<label for="duration">Select duration :<span>*</span></label> <select
 								name="exduration" style="width: 45%;">
-								<option selected value="${exercise.duration}" disabled selected>Choose duration</option>
+								<option selected value="30 minutes" disabled selected>Choose duration</option>
 								<option value="0.5">30 minutes</option>
 								<option value="1">1 hour</option>
 								<option value="1.5">1 hour 30 minutes</option>
